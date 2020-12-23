@@ -1,0 +1,25 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.card_custom {
+    min-width: 250px;
+    max-width: 20vw; 
+    margin-bottom:20px;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.list-group-item {
+    font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.list-group-item span {
+    font-size: 0.5rem;
+    font-weight: 300;
+}

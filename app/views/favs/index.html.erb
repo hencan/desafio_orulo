@@ -1,0 +1,115 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Favs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Orulo</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Min price</th>
+      <th>Min area</th>
+      <th>Max area</th>
+      <th>Min bedrooms</th>
+      <th>Max bedrooms</th>
+      <th>Min suites</th>
+      <th>Max suites</th>
+      <th>Min parking</th>
+      <th>Max parking</th>
+      <th>Min bathrooms</th>
+      <th>Max bathrooms</th>
+      <th>Price per private square meter</th>
+      <th>Status</th>
+      <th>Apts per floor</th>
+      <th>Number of floors</th>
+      <th>Features</th>
+      <th>Stock</th>
+      <th>Finality</th>
+      <th>Updated at</th>
+      <th>Orulo url</th>
+      <th>Developer</th>
+      <th>Developer name</th>
+      <th>Publisher</th>
+      <th>Publisher name</th>
+      <th>Address street type</th>
+      <th>Address street</th>
+      <th>Address number</th>
+      <th>Address are</th>
+      <th>Address city</th>
+      <th>Address latitude</th>
+      <th>Address longitude</th>
+      <th>Address state</th>
+      <th>Address zip code</th>
+      <th>Opportunity broker</th>
+      <th>Opportunity client</th>
+      <th>Opportunity exchange units</th>
+      <th>Default image</th>
+      <th>Default image description</th>
+      <th>Default image 200x140</th>
+      <th>Default image 520x280</th>
+      <th>Fav user</th>
+      <th>Fav update at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @favs.each do |fav| %>
+      <tr>
+        <td><%= fav.orulo_id %></td>
+        <td><%= fav.name %></td>
+        <td><%= fav.description %></td>
+        <td><%= fav.min_price %></td>
+        <td><%= fav.min_area %></td>
+        <td><%= fav.max_area %></td>
+        <td><%= fav.min_bedrooms %></td>
+        <td><%= fav.max_bedrooms %></td>
+        <td><%= fav.min_suites %></td>
+        <td><%= fav.max_suites %></td>
+        <td><%= fav.min_parking %></td>
+        <td><%= fav.max_parking %></td>
+        <td><%= fav.min_bathrooms %></td>
+        <td><%= fav.max_bathrooms %></td>
+        <td><%= fav.price_per_private_square_meter %></td>
+        <td><%= fav.status %></td>
+        <td><%= fav.apts_per_floor %></td>
+        <td><%= fav.number_of_floors %></td>
+        <td><%= fav.features %></td>
+        <td><%= fav.stock %></td>
+        <td><%= fav.finality %></td>
+        <td><%= fav.updated_at %></td>
+        <td><%= fav.orulo_url %></td>
+        <td><%= fav.developer_id %></td>
+        <td><%= fav.developer_name %></td>
+        <td><%= fav.publisher_id %></td>
+        <td><%= fav.publisher_name %></td>
+        <td><%= fav.address_street_type %></td>
+        <td><%= fav.address_street %></td>
+        <td><%= fav.address_number %></td>
+        <td><%= fav.address_are %></td>
+        <td><%= fav.address_city %></td>
+        <td><%= fav.address_latitude %></td>
+        <td><%= fav.address_longitude %></td>
+        <td><%= fav.address_state %></td>
+        <td><%= fav.address_zip_code %></td>
+        <td><%= fav.opportunity_broker %></td>
+        <td><%= fav.opportunity_client %></td>
+        <td><%= fav.opportunity_exchange_units %></td>
+        <td><%= fav.default_image_id %></td>
+        <td><%= fav.default_image_description %></td>
+        <td><%= fav.default_image_200x140 %></td>
+        <td><%= fav.default_image_520x280 %></td>
+        <td><%= fav.fav_user %></td>
+        <td><%= fav.fav_update_at %></td>
+        <td><%= link_to 'Show', fav %></td>
+        <td><%= link_to 'Edit', edit_fav_path(fav) %></td>
+        <td><%= link_to 'Destroy', fav, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fav', new_fav_path %>
