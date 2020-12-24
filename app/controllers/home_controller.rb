@@ -18,7 +18,7 @@ class HomeController < ApplicationController
     https.use_ssl = true
 
     request = Net::HTTP::Get.new(uri)
-    request["Authorization"] = "Bearer VDqfisFJS9-8yiLluw3fvII-lILi7WjHNjDGAg9jMbU"
+    
     # request["Cookie"] = "__cfduid=dbd1f177c4e7521fd632668a02c8f9fbe1608400451; ahoy_visitor=09b58ffa-9e44-4a67-8442-82d14a104c9a; AWSALB=wtFpowu0fW+YYEj3ZXnW2noe9Y0V4MwROqcYTtBss86nm8Kuo2qoMPGO3jqvolHNvsZIGhckuD+i/Pa6x0mNR6Uc1N8q9P+ozB1OLM0RDDRrGbtmfRrqSkAWGPg5; AWSALBCORS=wtFpowu0fW+YYEj3ZXnW2noe9Y0V4MwROqcYTtBss86nm8Kuo2qoMPGO3jqvolHNvsZIGhckuD+i/Pa6x0mNR6Uc1N8q9P+ozB1OLM0RDDRrGbtmfRrqSkAWGPg5; ahoy_visit=15414424-5ac3-41d7-abf8-e83baf53024a"
 
     response = https.request(request)
