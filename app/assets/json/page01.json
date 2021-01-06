@@ -1,0 +1,609 @@
+{
+    "buildings": [
+        {
+            "id": "1715",
+            "name": "Las Brisas",
+            "description": "Quantos sentidos tem o seu dia? Este empreendimento foi feito para pessoas exigentes que buscam exclusividade e alto padrão. Que apreciam a sensação de chegar em casa e aproveitar a liberdade. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 429000.0,
+            "min_area": 275.0,
+            "max_area": 275.0,
+            "min_bedrooms": 0,
+            "max_bedrooms": 0,
+            "min_suites": 0,
+            "max_suites": 0,
+            "min_parking": 0,
+            "max_parking": 0,
+            "min_bathrooms": 0,
+            "max_bathrooms": 0,
+            "price_per_private_square_meter": 1560.0,
+            "status": "Pronto novo",
+            "features": [
+                "Churrasqueira condominial",
+                "Circuito de TV",
+                "Espaço gourmet",
+                "Fitness",
+                "Piscina adulto",
+                "Piscina infantil",
+                "Playground",
+                "Portaria 24 horas",
+                "Praça",
+                "Quadra poliesportiva",
+                "Quadra tênis"
+            ],
+            "stock": 1,
+            "finality": "Residencial",
+            "updated_at": "05/01/2021 17:11:34",
+            "orulo_url": "https://www.orulo.com.br/buildings/1715",
+            "developer": {
+                "id": "197",
+                "name": "Bolognesi"
+            },
+            "publisher": {
+                "id": "197",
+                "name": "Bolognesi"
+            },
+            "address": {
+                "street_type": "Rua",
+                "street": "dos Pinheiros",
+                "number": 71,
+                "area": "Igara",
+                "city": "Canoas",
+                "latitude": -29.8939,
+                "longitude": -51.1628,
+                "state": "RS",
+                "zip_code": "92410-230"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "113258",
+                "description": "Entrada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/113258.jpg?1532611155",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/113258.jpg?1532611155"
+            }
+        },
+        {
+            "id": "4180",
+            "name": "Open Centro Canoas",
+            "description": "Na localização mais privilegiada no centro de Canoas, o empreendimento conta com uma infraestrutura completa, mobilidade para facilitar o acesso a qualquer região e ainda um preço que cabe no seu bolso Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 169900.0,
+            "min_area": 43.73,
+            "max_area": 43.73,
+            "min_bedrooms": 2,
+            "max_bedrooms": 2,
+            "min_suites": 0,
+            "max_suites": 0,
+            "min_parking": 1,
+            "max_parking": 1,
+            "min_bathrooms": 1,
+            "max_bathrooms": 1,
+            "price_per_private_square_meter": 3885.0,
+            "status": "Em construção",
+            "apts_per_floor": 4,
+            "number_of_floors": 5,
+            "features": [
+                "Bicicletário",
+                "Churrasqueira condominial",
+                "Pet place",
+                "Piscina adulto",
+                "Piscina infantil",
+                "Playground",
+                "Portaria",
+                "Quadra poliesportiva",
+                "Salão de festas",
+                "Solarium"
+            ],
+            "stock": 166,
+            "finality": "Residencial",
+            "updated_at": "05/01/2021 16:16:12",
+            "orulo_url": "https://www.orulo.com.br/buildings/4180",
+            "developer": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "publisher": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "address": {
+                "street_type": "Avenida",
+                "street": "José Maia Filho",
+                "number": 355,
+                "area": "Centro",
+                "city": "Canoas",
+                "latitude": -29.919,
+                "longitude": -51.1926,
+                "state": "RS",
+                "zip_code": "92310-500"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "209017",
+                "description": "Fachada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/209017.jpg?1568305786",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/209017.jpg?1568305786"
+            }
+        },
+        {
+            "id": "650",
+            "name": "Maxplaza Residencial",
+            "description": "O novo caminho de Canoas está aqui. Este complexo multiuso alia trabalho, residência, conveniência e lazer em um único lugar, além de ter um Medical Center, que contará com a primeira Unidade de Medicina Diagnóstica do Hospital Moinhos de Vento na cidade. Com localização estratégica, está logo na entrada de Canoas, com fácil acesso ao Aeroporto Salgado Filho. Invista no empreendimento que será o novo destino de Canoas. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 363953.34,
+            "min_area": 36.63,
+            "max_area": 46.97,
+            "min_bedrooms": 1,
+            "max_bedrooms": 1,
+            "min_suites": 0,
+            "max_suites": 1,
+            "min_parking": 0,
+            "max_parking": 1,
+            "min_bathrooms": 1,
+            "max_bathrooms": 1,
+            "price_per_private_square_meter": 9936.0,
+            "status": "Pronto novo",
+            "apts_per_floor": 12,
+            "number_of_floors": 13,
+            "features": [],
+            "stock": 92,
+            "finality": "Residencial",
+            "updated_at": "05/01/2021 16:15:55",
+            "orulo_url": "https://www.orulo.com.br/buildings/650",
+            "developer": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "publisher": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "address": {
+                "street_type": "Avenida",
+                "street": "Getulio Vargas",
+                "number": 4831,
+                "area": "Centro",
+                "city": "Canoas",
+                "latitude": -29.9243,
+                "longitude": -51.177,
+                "state": "RS",
+                "zip_code": "92020-333"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "74910",
+                "description": "Fachada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/74910.jpg?1532133334",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/74910.jpg?1532133334"
+            }
+        },
+        {
+            "id": "647",
+            "name": "Maxplaza Medical Center",
+            "description": "O novo caminho de Canoas está aqui. Este complexo multiuso alia trabalho, residência, conveniência e lazer em um único lugar, além de ter um Medical Center, que contará com a primeira Unidade de Medicina Diagnóstica do Hospital Moinhos de Vento na cidade. Com localização estratégica, está logo na entrada de Canoas, com fácil acesso ao Aeroporto Salgado Filho. Invista no empreendimento que será o novo destino de Canoas. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 492070.91,
+            "min_area": 34.79,
+            "max_area": 58.71,
+            "min_bedrooms": 0,
+            "max_bedrooms": 0,
+            "min_suites": 0,
+            "max_suites": 0,
+            "min_parking": 0,
+            "max_parking": 1,
+            "min_bathrooms": 1,
+            "max_bathrooms": 1,
+            "price_per_private_square_meter": 14144.0,
+            "status": "Pronto novo",
+            "apts_per_floor": 15,
+            "number_of_floors": 12,
+            "features": [],
+            "stock": 10,
+            "finality": "Comercial",
+            "updated_at": "05/01/2021 15:20:31",
+            "orulo_url": "https://www.orulo.com.br/buildings/647",
+            "developer": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "publisher": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "address": {
+                "street_type": "Avenida",
+                "street": "Getulio Vargas",
+                "number": 4831,
+                "area": "Centro",
+                "city": "Canoas",
+                "latitude": -29.9236,
+                "longitude": -51.1776,
+                "state": "RS",
+                "zip_code": "92020-333"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "74909",
+                "description": "Fachada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/74909.jpg?1532133332",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/74909.jpg?1532133332"
+            }
+        },
+        {
+            "id": "646",
+            "name": "Maxplaza Lojas",
+            "description": "O novo caminho de Canoas está aqui. Este complexo multiuso alia trabalho, residência, conveniência e lazer em um único lugar, além de ter um Medical Center, que contará com a primeira Unidade de Medicina Diagnóstica do Hospital Moinhos de Vento na cidade. Com localização estratégica, está logo na entrada de Canoas, com fácil acesso ao Aeroporto Salgado Filho. Invista no empreendimento que será o novo destino de Canoas. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 3661165.75,
+            "min_area": 216.08,
+            "max_area": 563.87,
+            "min_bedrooms": 0,
+            "max_bedrooms": 0,
+            "min_suites": 0,
+            "max_suites": 0,
+            "min_parking": 1,
+            "max_parking": 1,
+            "min_bathrooms": 2,
+            "max_bathrooms": 2,
+            "price_per_private_square_meter": 16944.0,
+            "status": "Pronto novo",
+            "apts_per_floor": 1,
+            "number_of_floors": 1,
+            "features": [],
+            "stock": 9,
+            "finality": "Comercial",
+            "updated_at": "05/01/2021 15:20:00",
+            "orulo_url": "https://www.orulo.com.br/buildings/646",
+            "developer": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "publisher": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "address": {
+                "street_type": "Avenida",
+                "street": "Getulio Vargas",
+                "number": 4831,
+                "area": "Centro",
+                "city": "Canoas",
+                "latitude": -29.9236,
+                "longitude": -51.1777,
+                "state": "RS",
+                "zip_code": "92020-333"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "74908",
+                "description": "Fachada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/74908.jpg?1532133330",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/74908.jpg?1532133330"
+            }
+        },
+        {
+            "id": "613",
+            "name": "Chateau de La Vie",
+            "description": "Apartamentos de 2 e 3 dormitórios com uma suite, living 2 ambientes, banheiro social, cozinha, área de serviço e vaga para um carro. Condomínio em ótima localização, próximo ao Hospital Nossa Senhora das Graças. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 347000.0,
+            "min_area": 73.39,
+            "max_area": 73.39,
+            "min_bedrooms": 2,
+            "max_bedrooms": 2,
+            "min_suites": 1,
+            "max_suites": 1,
+            "min_parking": 1,
+            "max_parking": 1,
+            "min_bathrooms": 2,
+            "max_bathrooms": 2,
+            "price_per_private_square_meter": 4728.0,
+            "status": "Pronto novo",
+            "apts_per_floor": 6,
+            "number_of_floors": 7,
+            "features": [
+                "Bicicletário",
+                "Brinquedoteca",
+                "Churrasqueira condominial",
+                "Condomínio fechado",
+                "Depósito",
+                "Elevador social",
+                "Espaço gourmet",
+                "Gás central condominial",
+                "Jardim",
+                "Portaria 24 horas",
+                "Porteiro eletrônico",
+                "Salão de festas",
+                "Segurança",
+                "Zelador"
+            ],
+            "stock": 1,
+            "finality": "Residencial",
+            "updated_at": "05/01/2021 15:19:49",
+            "orulo_url": "https://www.orulo.com.br/buildings/613",
+            "developer": {
+                "id": "513",
+                "name": "Lottici"
+            },
+            "publisher": {
+                "id": "513",
+                "name": "Lottici"
+            },
+            "address": {
+                "street_type": "Rua",
+                "street": "Clemente Pinto",
+                "number": 146,
+                "area": "Nossa Senhora das Graças",
+                "city": "Canoas",
+                "latitude": -29.9297,
+                "longitude": -51.1649,
+                "state": "RS",
+                "zip_code": "92025-290"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "74916",
+                "description": "Fachada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/74916.jpg?1532133344",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/74916.jpg?1532133344"
+            }
+        },
+        {
+            "id": "645",
+            "name": "Maxplaza Hotel",
+            "description": "O novo caminho de Canoas está aqui. Este complexo multiuso alia trabalho, residência, conveniência e lazer em um único lugar, além de ter um Medical Center, que contará com a primeira Unidade de Medicina Diagnóstica do Hospital Moinhos de Vento na cidade. Com localização estratégica, está logo na entrada de Canoas, com fácil acesso ao Aeroporto Salgado Filho. Invista no empreendimento que será o novo destino de Canoas. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 365078.87,
+            "min_area": 22.79,
+            "max_area": 36.73,
+            "min_bedrooms": 1,
+            "max_bedrooms": 1,
+            "min_suites": 1,
+            "max_suites": 1,
+            "min_parking": 0,
+            "max_parking": 0,
+            "min_bathrooms": 1,
+            "max_bathrooms": 1,
+            "price_per_private_square_meter": 16019.0,
+            "status": "Pronto novo",
+            "apts_per_floor": 18,
+            "number_of_floors": 12,
+            "features": [],
+            "stock": 41,
+            "finality": "Residencial",
+            "updated_at": "05/01/2021 15:19:22",
+            "orulo_url": "https://www.orulo.com.br/buildings/645",
+            "developer": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "publisher": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "address": {
+                "street_type": "Avenida",
+                "street": "Getulio Vargas",
+                "number": 4831,
+                "area": "Centro",
+                "city": "Canoas",
+                "latitude": -29.9232,
+                "longitude": -51.1776,
+                "state": "RS",
+                "zip_code": "92020-333"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "71107",
+                "description": "Conjunto",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/71107.jpg?1532118980",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/71107.jpg?1532118980"
+            }
+        },
+        {
+            "id": "644",
+            "name": "Maxplaza Comercial",
+            "description": "O novo caminho de Canoas está aqui. Este complexo multiuso alia trabalho, residência, conveniência e lazer em um único lugar, além de ter um Medical Center, que contará com a primeira Unidade de Medicina Diagnóstica do Hospital Moinhos de Vento na cidade. Com localização estratégica, está logo na entrada de Canoas, com fácil acesso ao Aeroporto Salgado Filho. Invista no empreendimento que será o novo destino de Canoas. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 401655.21,
+            "min_area": 27.85,
+            "max_area": 33.04,
+            "min_bedrooms": 0,
+            "max_bedrooms": 0,
+            "min_suites": 0,
+            "max_suites": 0,
+            "min_parking": 0,
+            "max_parking": 1,
+            "min_bathrooms": 1,
+            "max_bathrooms": 1,
+            "price_per_private_square_meter": 14422.0,
+            "status": "Pronto novo",
+            "apts_per_floor": 12,
+            "number_of_floors": 13,
+            "features": [],
+            "stock": 9,
+            "finality": "Comercial",
+            "updated_at": "05/01/2021 15:18:59",
+            "orulo_url": "https://www.orulo.com.br/buildings/644",
+            "developer": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "publisher": {
+                "id": "98",
+                "name": "Melnick Even"
+            },
+            "address": {
+                "street_type": "Avenida",
+                "street": "Getulio Vargas",
+                "number": 4831,
+                "area": "Centro",
+                "city": "Canoas",
+                "latitude": -29.924,
+                "longitude": -51.1775,
+                "state": "RS",
+                "zip_code": "92020-333"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "74907",
+                "description": "Fachada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/74907.jpg?1532133327",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/74907.jpg?1532133327"
+            }
+        },
+        {
+            "id": "15908",
+            "name": "Edifício Liana - Lojas",
+            "description": "Próximo ao HUB da saúde de Canoas e ao Zaffari Bourbon, a 5 minutos do Park Shopping Canoas. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 266700.0,
+            "min_area": 35.56,
+            "max_area": 35.56,
+            "min_bedrooms": 0,
+            "max_bedrooms": 0,
+            "min_suites": 0,
+            "max_suites": 0,
+            "min_parking": 0,
+            "max_parking": 0,
+            "min_bathrooms": 1,
+            "max_bathrooms": 1,
+            "price_per_private_square_meter": 7500.0,
+            "status": "Em construção",
+            "apts_per_floor": 5,
+            "number_of_floors": 1,
+            "features": [],
+            "stock": 5,
+            "finality": "Comercial",
+            "updated_at": "05/01/2021 15:18:44",
+            "orulo_url": "https://www.orulo.com.br/buildings/15908",
+            "developer": {
+                "id": "1166",
+                "name": "Resida Incorporações e Construções"
+            },
+            "publisher": {
+                "id": "1166",
+                "name": "Resida Incorporações e Construções"
+            },
+            "address": {
+                "street_type": "Rua",
+                "street": "Santa Maria",
+                "number": 420,
+                "area": "Nossa Senhora das Graças",
+                "city": "Canoas",
+                "latitude": -29.9267,
+                "longitude": -51.1752,
+                "state": "RS",
+                "zip_code": "92025-390"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "492269",
+                "description": "Fachada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/492269.jpeg?1604070598",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/492269.jpeg?1604070598"
+            }
+        },
+        {
+            "id": "13770",
+            "name": "Residencial Domani",
+            "description": "O empreendimento é constituído por 8 torres, 6 apartamentos por andar, de 52 a 54 m², e elevador, um grande diferencial para o Minha Casa Minha Vida. Cada apartamento tem 2 dormitórios, box privativo e churrasqueira. Preço e disponibilidade do imóvel sujeitos a alteração sem aviso prévio.",
+            "min_price": 184000.0,
+            "min_area": 52.59,
+            "max_area": 52.59,
+            "min_bedrooms": 2,
+            "max_bedrooms": 2,
+            "min_suites": 0,
+            "max_suites": 0,
+            "min_parking": 1,
+            "max_parking": 1,
+            "min_bathrooms": 1,
+            "max_bathrooms": 1,
+            "price_per_private_square_meter": 3499.0,
+            "status": "Em construção",
+            "apts_per_floor": 6,
+            "number_of_floors": 8,
+            "features": [
+                "Bicicletário",
+                "Brinquedoteca",
+                "Chimarródromo",
+                "Elevador social",
+                "Fitness",
+                "Horta coletiva",
+                "Pet place",
+                "Piscina adulto",
+                "Pista caminhada",
+                "Playground",
+                "Portaria",
+                "Quadra poliesportiva",
+                "Salão de festas",
+                "Segurança",
+                "Vestiários"
+            ],
+            "stock": 121,
+            "finality": "Residencial",
+            "updated_at": "05/01/2021 15:17:53",
+            "orulo_url": "https://www.orulo.com.br/buildings/13770",
+            "developer": {
+                "id": "513",
+                "name": "Lottici"
+            },
+            "publisher": {
+                "id": "513",
+                "name": "Lottici"
+            },
+            "address": {
+                "street_type": "Rua",
+                "street": "Dom João Becker",
+                "number": 1781,
+                "area": "Fátima",
+                "city": "Canoas",
+                "latitude": -29.9464,
+                "longitude": -51.1855,
+                "state": "RS",
+                "zip_code": "92200-722"
+            },
+            "opportunity": {
+                "broker": false,
+                "client": false,
+                "exchange_units": false
+            },
+            "default_image": {
+                "id": "439654",
+                "description": "Fachada",
+                "200x140": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/thumb/439654.jpg?1601067640",
+                "520x280": "https://s3.amazonaws.com/uploaded.prod.corretordireto/images/properties/featured_modern_without_watermark/439654.jpg?1601067640"
+            }
+        }
+    ],
+    "total": 70,
+    "page": 1,
+    "total_pages": 7
+}
