@@ -1,0 +1,54 @@
+<h1>Favoritos</h1>
+
+<table class="table table-borderless">
+
+  <tbody>
+    
+    <% @favorites.each do |favorite| %>
+
+        <tr>
+          <%# <td><%= favorite.fav_id </td> %>
+          <td rowspan="5" class="w-25"><img src='<%= favorite.fav_image %>' class="img-thumbnail" alt="..."></td>
+          <td class="fs-5 fw-bold"><%= favorite.fav_name %></td>
+          <td rowspan="4">
+            <%= link_to favorite, method: :delete, data: { confirm: 'Deseja remover dos Favoritos?' } do %>
+              <%= fa_icon "trash", class: "text-danger ms-2 fs-4" %>
+            <% end %>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="fs-6">
+            <strong><%= favorite.fav_finality %></strong> <span> | </span>
+            <%= fa_icon "home", text: favorite.fav_min_area %> <span>m²</span>
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr>
+          <td class="fs-6">
+            <%= fa_icon "bed", text: favorite.fav_min_bedrooms %> <span>quarto(s) </span>
+            <%= fa_icon "bath", text: favorite.fav_min_bathrooms %> <span>banheiro(s)</span>
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td class="fs-6">
+            <%= fa_icon "map-marker"%> 
+            <%= favorite.fav_street_type %> 
+            <%= favorite.fav_street %>, 
+            <%= favorite.fav_area %>, 
+            <%= favorite.fav_city %>, 
+            <%= favorite.fav_state %>
+          </td>
+          <td></td>
+        </tr>
+        
+        <tr>
+          <td colspan="2" class="fs-6 show_2_lines"><%= favorite.fav_description %></td>
+        </tr>
+
+    <% end %>
+  </tbody>
+</table>
