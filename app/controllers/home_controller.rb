@@ -1,16 +1,27 @@
 class HomeController < ApplicationController
-  
-  def get_data(pg)
-    require 'net/http'
-    require "uri"
+
+  def key
     require 'json'
 
+    data_hash = JSON.parse(File.read('./app/assets/keys/key.json'))
+
+    puts data_hash["key_orulo"]
+
+  end
+  
+  def get_data()
+
+    # puts "Page recieved in get_data"
+    # puts @actual_page
+
+    key()
+
+    require 'net/http'
     require "uri"
-    require "net/http"
 
     url_concat = "https://www.orulo.com.br/api/v2/buildings" + "?page=" + @actual_page.to_s
 
-    puts url_concat
+    # puts url_concat
 
     uri = URI(url_concat)
 
@@ -18,9 +29,8 @@ class HomeController < ApplicationController
     https.use_ssl = true
 
     request = Net::HTTP::Get.new(uri)
-    
-    # request["Cookie"] = "__cfduid=dbd1f177c4e7521fd632668a02c8f9fbe1608400451; ahoy_visitor=09b58ffa-9e44-4a67-8442-82d14a104c9a; AWSALB=wtFpowu0fW+YYEj3ZXnW2noe9Y0V4MwROqcYTtBss86nm8Kuo2qoMPGO3jqvolHNvsZIGhckuD+i/Pa6x0mNR6Uc1N8q9P+ozB1OLM0RDDRrGbtmfRrqSkAWGPg5; AWSALBCORS=wtFpowu0fW+YYEj3ZXnW2noe9Y0V4MwROqcYTtBss86nm8Kuo2qoMPGO3jqvolHNvsZIGhckuD+i/Pa6x0mNR6Uc1N8q9P+ozB1OLM0RDDRrGbtmfRrqSkAWGPg5; ahoy_visit=15414424-5ac3-41d7-abf8-e83baf53024a"
-
+    request['Authorization'] = 'Bearer VDqfisFJS9-8yiLluw3fvII-lILi7WjHNjDGAg9jMbU'
+    request["Cookie"] = "__cfduid=dbd1f177c4e7521fd632668a02c8f9fbe1608400451; ahoy_visitor=09b58ffa-9e44-4a67-8442-82d14a104c9a; AWSALB=fC9aMS4CzDIf3ybvJIRlW4wcwLgrY/VIcOaIzx1Cq9KxYeieI9vvoe+6dr575/+guBYZyLSOQ+Be+sL+nhrOPLvXa0RKWyECOXMuQtgi2lIOoyNw2u/h+ASDWtn4; AWSALBCORS=fC9aMS4CzDIf3ybvJIRlW4wcwLgrY/VIcOaIzx1Cq9KxYeieI9vvoe+6dr575/+guBYZyLSOQ+Be+sL+nhrOPLvXa0RKWyECOXMuQtgi2lIOoyNw2u/h+ASDWtn4"
     response = https.request(request)
     
     # puts response.read_body
@@ -41,14 +51,26 @@ class HomeController < ApplicationController
 
   end
 
-  def index(pg = 1)
+  def index()
 
-    @actual_page = pg
+    if params[:page]
+    puts params[:page]
+    @actual_page = params[:page]
+    else
+      @actual_page = 1
+    end
 
-    get_data(@actual_page)
+    get_data()
     
-    puts @actual_page
-
   end
+
+  # private
+
+  # Only allow a list of trusted parameters through.
+  # def home_params
+  #   params.require(:home).permit(:page)
+  # end
+  
+
 
 end
