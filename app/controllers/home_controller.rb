@@ -3,9 +3,7 @@ class HomeController < ApplicationController
   def key
     require 'json'
 
-    data_hash = JSON.parse(File.read('./app/assets/keys/key.json'))
-
-    puts data_hash["key_orulo"]
+    @data_hash = JSON.parse(File.read('./app/assets/keys/key.json'))
 
   end
   
@@ -29,7 +27,7 @@ class HomeController < ApplicationController
     https.use_ssl = true
 
     request = Net::HTTP::Get.new(uri)
-    request['Authorization'] = 'Bearer VDqfisFJS9-8yiLluw3fvII-lILi7WjHNjDGAg9jMbU'
+    request['Authorization'] = @data_hash["key_orulo"]
     request["Cookie"] = "__cfduid=dbd1f177c4e7521fd632668a02c8f9fbe1608400451; ahoy_visitor=09b58ffa-9e44-4a67-8442-82d14a104c9a; AWSALB=fC9aMS4CzDIf3ybvJIRlW4wcwLgrY/VIcOaIzx1Cq9KxYeieI9vvoe+6dr575/+guBYZyLSOQ+Be+sL+nhrOPLvXa0RKWyECOXMuQtgi2lIOoyNw2u/h+ASDWtn4; AWSALBCORS=fC9aMS4CzDIf3ybvJIRlW4wcwLgrY/VIcOaIzx1Cq9KxYeieI9vvoe+6dr575/+guBYZyLSOQ+Be+sL+nhrOPLvXa0RKWyECOXMuQtgi2lIOoyNw2u/h+ASDWtn4"
     response = https.request(request)
     
