@@ -1,0 +1,98 @@
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= fa_icon "home", class: "fs-2 text-white-50" %>
+    <%# <img class='me-2' src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="45" height="38" class="d-inline-block align-top"> %>
+
+    <% if @actual_page %>
+      <%= button_to 'Órulo Rails App', root_path, method: :get, params: { page: @actual_page }, class: "btn btn-dark nav-link text-white-50" %>
+    <% else%>
+      <%= button_to 'Órulo Rails App', root_path, method: :get, params: { page: 1 }, class: "btn btn-dark nav-link text-white-50" %>
+    <% end %>
+
+    <%# <a class="navbar-brand" href="#">Rails Orulo App</a> %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto ">
+
+        <% if user_signed_in? %>
+
+          <li class="nav-item d-flex flex-row justify-content-center mx-3">
+              <%# <div class="d-flex align-items-center"><i class="far fa-heart text-secondary"></i></div> %>
+              <%= button_to  favorites_path, form: { "data-type" => "json" }, method: :get, params: { page: @actual_page }, class:"btn btn-dark text-white-50" do %>
+                <% if Favorite.where(fav_user: current_user.id).length > 0 %>
+                  <%= fa_icon "heart", class: "text-danger me-1", text: "Favoritos" %><span class="badge rounded-pill bg-secondary ms-1"><%= Favorite.where(fav_user: current_user.id).length %></span>
+
+                <% else %>
+                  <%= fa_icon "heart", text: "Favoritos" %>
+                <% end %>
+              <% end %>
+          </li>
+
+        <% end %>
+
+
+
+
+
+        <%# <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> %>
+      </ul>
+      <ul class="navbar-nav">
+        <% if user_signed_in? %>
+          <li class="nav-item dropdown">
+          <!-- Split dropstart button -->
+              <a class="nav-link dropdown-toggle text-center" style="min-width: 150px" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <%= fa_icon "user", text: "Olá " + current_user.name %> 
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-lg-start" aria-labelledby="navbarDarkDropdownMenuLink">
+
+                <li class="dropdown-item">
+                  <%= button_to edit_user_registration_path, form: { "data-type" => "json" }, method: :get, params: { page: @actual_page }, class:"btn" do %>
+                    <%= fa_icon "user", text: "Editar" %>
+                  <% end %>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <%= link_to destroy_user_session_path, method: :delete, class: "btn" do %>
+                    <%= fa_icon "sign-out", text: "Logout" %>
+                  <% end %>
+                </li>
+
+              </ul>
+            </li>
+        <% else %>
+          <li class="nav-item d-flex flex-row ">
+            <%= button_to new_user_registration_path, method: :get, class:"btn btn-dark nav-link" do %>
+              <%= fa_icon "user-plus", class: "text-white-50", text: "Cadastrar" %>
+            <% end %>
+          </li>
+          <li class="nav-item d-flex flex-row ">
+            <%= button_to new_user_session_path, method: :get, class:"btn btn-dark nav-link" do %>
+              <%= fa_icon "sign-in", class: "text-white-50", text: "Login" %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+      <%# <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary" type="submit">Search</button>
+      </form> %>
+    </div>
+  </div>
+</nav>

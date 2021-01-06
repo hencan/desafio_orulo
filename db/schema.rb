@@ -10,7 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_23_013953) do
+ActiveRecord::Schema.define(version: 2021_01_05_200733) do
+
+  create_table "favorites", force: :cascade do |t|
+    t.string "fav_id"
+    t.string "fav_name"
+    t.string "fav_user"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "fav_image"
+    t.text "fav_description"
+    t.string "fav_finality"
+    t.integer "fav_min_bedrooms"
+    t.integer "fav_min_bathrooms"
+    t.float "fav_min_area"
+    t.string "fav_street_type"
+    t.string "fav_street"
+    t.string "fav_area"
+    t.string "fav_city"
+    t.string "fav_state"
+    t.float "fav_min_price"
+    t.index ["fav_user"], name: "index_favorites_on_fav_user"
+  end
 
   create_table "favs", force: :cascade do |t|
     t.integer "orulo_id"
@@ -63,8 +84,10 @@ ActiveRecord::Schema.define(version: 2020_12_23_013953) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "name", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
+    t.boolean "admin", default: false, null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
