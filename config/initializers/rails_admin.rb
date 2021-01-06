@@ -8,14 +8,14 @@ RailsAdmin.config do |config|
   end
   config.current_user_method(&:current_user)
 
-  config.authorize_with do
-    unless current_user.role == "admin"
-      respond_to do |format|
-        format.html { redirect_to root_path, notice: 'Não Autorizado' }
-        format.json { head :no_content }
-      end
-    end
-  end
+  # config.authorize_with do
+  #   unless current_user.role == "admin"
+  #     respond_to do |format|
+  #       format.html { redirect_to root_path, notice: 'Não Autorizado' }
+  #       format.json { head :no_content }
+  #     end
+  #   end
+  # end
 
   ## == CancanCan ==
   # config.authorize_with :cancancan
