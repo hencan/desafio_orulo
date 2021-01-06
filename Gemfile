@@ -25,6 +25,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'json', '~> 2.5', '>= 2.5.1'
 # Autorizathion and Authentication
 gem 'devise', '~> 4.7', '>= 4.7.3'
+# Admin Painel
+gem 'rails_admin', '~> 2.0'
+# Font Awesome Gem
+gem "font-awesome-rails"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
