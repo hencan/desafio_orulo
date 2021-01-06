@@ -2,24 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+// Variable Group of Sizes and Colors
+$width-max: 260px;
+$width-mobile: 100%;
+
+
+// Screen Responsiveness Variables Group
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+
 .card_custom {
-    min-width: 250px;
-    max-width: 20vw; 
-    margin-bottom:20px;
+    margin-bottom: 20px;
+    max-width: $width-max;
+}
+@media (max-width: $screen-xs-max) {
+    .card_custom {
+        width: $width-mobile;
+        max-width: $width-mobile;
+    }
 }
 
-.description {
+.show_2_lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.show_3_lines {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
+
 .list-group-item {
     font-size: 0.95rem;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .list-group-item span {
     font-size: 0.5rem;
-    font-weight: 300;
+    font-weight: 600;
 }
