@@ -61,7 +61,7 @@
 
               <ul class="dropdown-menu dropdown-menu-lg-start" aria-labelledby="navbarDarkDropdownMenuLink">
 
-                <% if current_user.admin? %>
+                <% if current_user.admin %>
                   <li class="dropdown-item">
                     <%= button_to rails_admin_path, form: { "data-type" => "json", target: '_blank' }, method: :get, class:"btn" do %>
                       <%= fa_icon "cog", text: "Admin" %>
