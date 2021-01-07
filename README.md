@@ -25,22 +25,7 @@ O que valorizamos:
 
 ## Clone e Instalação
 
-Instalação: Realize o [clone do repositório](https://docs.github.com/pt/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository), após concluído acesse a pasta raiz do projeto e execute `bundle install --without prodution` para instalar as dependências:
-
-- @babel/core
-- @babel/preset-env
-- gulp, gulp-babel
-- gulp-clean-css
-- gulp-concat
-- gulp-htmlmin
-- gulp-less
-- gulp-uglify
-- gulp-webserver
-- less
-- babel-cli
-- babel-core
-- babel-preset-env
-- babel-preset-es2015
+Instalação: Realize o [clone do repositório](https://docs.github.com/pt/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository), após concluído acesse a pasta raiz do projeto e execute `bundle install --without prodution` para instalar as dependências.
 
 ## Desenvolvimento
 
