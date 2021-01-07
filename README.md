@@ -21,7 +21,7 @@ O que valorizamos:
 
 >O seu código deve ser disponibilizado no Github sem a inclusão do token da API.
 
->O README deve informar como devemos fazer para executar a aplicação e validar o que foi feito. 
+* O README deve informar como devemos fazer para executar a aplicação e validar o que foi feito. 
 
 ## Clone e Instalação
 
@@ -35,13 +35,19 @@ Para o funcionamento da página é necessário a criação do arquivo `key.json`
 
 Modelo do conteúdo do arquivo key.json:
 
-`{ "key_orulo": "Bearer *Valor da Chave de Acesso*" }`
+`{ "key_orulo": "Bearer [Valor da Token]" }`
+
+Nota: Não incluir os colchetes no conteúdo do arquivo.
+
+O banco de dados de desenvolvimento é o SQLite3.
 
 A cada alteração no código você precisará realizar o refresh da página manualmente no browser.
 
 Além do perfil de usuário existe ainda o perfil de administrador, que deve ser alterado manualmente no banco de dados. Acesse a table users, escolha o usuário e mude o valor do campo admin para true. Após concluida esta estapa o administrador poderá acessar o ambiente Rails_admin e ter acesso total as tabelas do banco de dados.
 
 ## Produção
+
+O banco de dados de produção é o PostgreSQL.
 
 Foi utilizado o Heroku para hospedagem e teste do código, onde foi possivel testar o funcionamento.
 
