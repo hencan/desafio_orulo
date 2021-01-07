@@ -1,4 +1,4 @@
-# DESAFIO NITRODIGITAL
+# DESAFIO ÓRULO
 
 ## Objetivo do Desafio
 
